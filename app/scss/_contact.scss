@@ -1,0 +1,291 @@
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.contact-page {
+  display: flex;
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 200% */
+  h1 {
+    color: #33323d;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    padding: 0;
+  }
+
+  p {
+    color: #33323d;
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    width: 635px;
+    opacity: 0.8;
+  }
+}
+
+.contact-page .contact-h1 {
+  margin-left: -7em;
+}
+
+.social-nav {
+  margin-left: 4em;
+}
+
+.social-nav .social-links1 {
+  text-align: left;
+  padding-left: 0;
+}
+
+.contact-me {
+  display: flex;
+
+  h1 {
+    //color: #33323d;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    padding-top: 2%;
+  }
+}
+.Contact-form {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 230.769% */
+  margin-left: -3em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 310%;
+  padding: 8px;
+  border: 1px solid #33323d;
+  border-radius: 4px;
+  background-color: #33323d;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #fafafa;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #33323d;
+  transition: 1s;
+}
+
+.contact-me h4 {
+  padding-top: 1%;
+  padding-bottom: -8%;
+}
+
+.contact-page {
+  display: flex;
+
+  h1 {
+    color: #33323d;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    margin-left: 15%;
+  }
+
+  p {
+    color: #33323d;
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    width: 635px;
+    opacity: 0.8;
+  }
+}
+
+.contact-me {
+  display: flex;
+
+  h1 {
+    color: #33323d;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    width: 350px;
+    padding-top: 2%;
+  }
+}
+.Contact-form {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 230.769% */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 500px;
+  padding: 8px;
+  border: 1px solid #33323d;
+  border-radius: 4px;
+  background-color: white;
+  opacity: 0.3;
+  border-radius: 0%;
+}
+
+.red-btn {
+  //color: #fff;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #203a4c;
+  width: 200px;
+  height: 48px;
+}
+
+.contact-me h4 {
+  padding-top: 1%;
+  padding-bottom: -8%;
+}
+
+.Contact-form .custom-input {
+  color: #33323d;
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 230.769% */
+  background: white;
+  border-radius: 0%;
+}
+
+.Contact-form .custom-input::placeholder {
+  color: black;
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 230.769% */
+  border-radius: 0%;
+}
+
+// Mobile queries //
+// small screens
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 390px;
+    padding: 32px;
+  }
+
+  .contact-page {
+    flex-direction: column;
+    color: #33323d;
+    font-family: "Public Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 200% */
+  }
+
+  .contact-page h1 {
+    margin-left: 18%;
+    margin-top: 2px;
+  }
+
+  .contact-page .social-nav p {
+    margin-top: 2px;
+    max-width: 90%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .post-share {
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .social-nav {
+    margin-left: 0em;
+    width: 311px;
+  }
+
+  .contact-page h1 {
+    justify-content: center;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .contact-me h1 {
+    flex-direction: column;
+  }
+
+  .Contact-form form {
+    flex-direction: column;
+    margin: 0 32px;
+    max-width: 100%;
+  }
+
+  .Contact-form form input,
+  .Contact-form form textarea {
+    width: 95%;
+  }
+
+  .Contact-form form input[type="text"] {
+    width: 95%;
+    border-radius: 0%;
+  }
+
+  .Contact-form form input[type="email"] {
+    width: 95%;
+    border-radius: 0;
+    columns: $onyx;
+  }
+  .Contact-form form input::placeholder {
+    color: #33323d;
+    font-family: "Public Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 230.769% */
+    opacity: 1;
+  }
+  .footer {
+    margin-bottom: -8em;
+  }
+}

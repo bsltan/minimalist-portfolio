@@ -1,0 +1,285 @@
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.nav__menu li a {
+  color: $onyx;
+  display: block;
+  text-align: center;
+}
+
+.nav__menu li a:visited {
+  color: #5fb4a2;
+}
+
+.nav__menu li a:hover {
+  color: blue;
+}
+
+.nav {
+  &__menu {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: $onyx;
+  }
+}
+
+.hero1 {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(/images/homepage/desktop/image-homepage-hero.jpg);
+
+  &__content {
+    display: flex;
+  }
+
+  &__main {
+    background: white;
+    padding-top: 1em;
+    padding-right: 2em;
+
+    &__btn {
+      padding-top: 10px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button img {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}
+
+.flex {
+  &__1 {
+    flex: 1;
+  }
+
+  &__2 {
+    flex: 2;
+  }
+
+  &__9 {
+    flex: 9;
+  }
+}
+
+button {
+  background: #33323d;
+  padding: 1em 4em;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: white;
+  padding: 1em 4em;
+  color: #33323d;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 3em;
+  border: 1px solid #33323d;
+}
+
+.about {
+  margin-bottom: 8em;
+  display: flex;
+  margin-top: 8em;
+  font-family: "Public Sans";
+  opacity: 0.8;
+
+  &__content {
+    line-height: 2;
+    margin-bottom: 2em;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__image {
+    background-image: url("/images/homepage/desktop/image-homepage-profile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.interest {
+  display: flex;
+  align-items: center;
+  padding-left: 8em;
+  margin-bottom: 4em;
+
+  &__contact {
+    text-align: right;
+  }
+}
+
+.footer {
+  margin-top: 4em;
+  background-color: #33323d;
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: "Public Sans";
+    font-size: 12px;
+    padding-right: 10em;
+  }
+  &__menu li {
+    margin-right: 2em;
+  }
+  &__menu li a {
+    color: #fff;
+  }
+  &__menu li a:visited {
+    color: #fff;
+  }
+}
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-1 .footer__svg {
+  padding-left: 4em;
+}
+
+.footer .footer__social svg {
+  margin-left: 11em;
+}
+
+svg {
+  padding-left: 16em;
+}
+
+// Mobile queries //
+// small screens
+@media only screen and (max-width: 450px) {
+  .container {
+    //max-width: 390px;
+    padding: 0 32px;
+  }
+
+  .nav__menu {
+    //border: 2px solid red;
+    display: none;
+  }
+  .hero1 {
+    width: 100%;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5em;
+    margin-bottom: 4em;
+  }
+
+  .line {
+    margin-top: 2em;
+  }
+
+  .interest {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .footer .container-1 {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__menu li {
+    margin: 1em 0;
+  }
+
+  .footer__social svg {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__svg {
+    padding: 0;
+  }
+
+  .container-1 .footer__svg {
+    padding-left: 0;
+  }
+
+  .footer .footer__social svg {
+    margin-left: 0;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  ul.mobile-menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile-menu.open {
+    display: block;
+    background: #33323d;
+    position: absolute;
+    top: 60px; /* Adjust as needed to position the menu below the hamburger */
+    width: 50%;
+    text-align: center;
+    right: 50px;
+  }
+
+  .mobile-menu.open a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  .hamburger {
+    margin-left: -83px;
+  }
+
+  .mobile-menu {
+    transition: transform 0.3s ease-in-out;
+  }
+}
